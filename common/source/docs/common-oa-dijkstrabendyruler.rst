@@ -9,7 +9,7 @@ BendyRuler does not guarantee a shortest path, and can be called a local planner
 
 .. note::
 
-    This is only applicable in AUTO, GUIDED, and RTL flight modes.
+    This is only applicable in AUTO and RTL flight modes. In GUIDED mode Bit 6 of parameter GUID_OPTIONS should be set to enable obstacle avoidance.
 
 This method starts with traditional Dijkstra's planning the shortest path around all the fences that are present between the flight path. In between this path, if any proximity based obstacle is detected, the navigation is switched to BendyRuler. If there are no obstacles in the nearby view of the sensor, the vehicle resumes normal Dijkstra's based navigation.
 

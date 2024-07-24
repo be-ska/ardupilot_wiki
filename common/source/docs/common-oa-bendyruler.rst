@@ -11,7 +11,7 @@ Copter and Rover 4.0 (and higher) support "BendyRuler" for path planning around 
 
 .. note::
 
-    This is only applicable in AUTO, GUIDED, and RTL flight modes.
+    This is only applicable in AUTO and RTL flight modes. In GUIDED mode Bit 6 of parameter GUID_OPTIONS should be set to enable obstacle avoidance.
 
 .. image:: ../../../images/oa-bendy-ruler.png
     :width: 450px
